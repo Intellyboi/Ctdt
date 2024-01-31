@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+<title>SVAP Monitoring</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/css/bootstrap-extended.min.css">
+<link rel="stylesheet" type="text/css" href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/fonts/simple-line-icons/style.min.css">
+<link rel="stylesheet" type="text/css" href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/css/colors.min.css">
+<link rel="stylesheet" type="text/css" href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+<style>
+  .grey-bg {  
+    background-color: #F5F7FA;
+}
+</style>
+</head>
+<div class="grey-bg container-fluid">
+  <center><div style="margin-top:2em;"><h1>SVAP MONITOR</h1></div></center>
+  <section id="minimal-statistics">
+    <div class="row">
+      <div class="col-12 mt-3 mb-1">
+        <center><h4 class="text-uppercase">Characteristic Measurements</h4></center>
+        <center><p>Phenotypic Features</p></center>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-3 col-sm-6 col-12"> 
+        <div class="card">
+          <div class="card-content">
+            <div class="card-body">
+              <div class="media d-flex">
+                <div class="align-self-center">
+                  <i class="icon-like primary font-large-2 float-left"></i>
+                </div>
+                <div class="media-body text-right">
+                  <h3><input readonly type="number" id="four_finger_width" style="height:2.5em; width:3em; border:none;"></h3>
+                  <span>Four-finger Width</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-sm-6 col-12">
+        <div class="card">
+          <div class="card-content">
+            <div class="card-body">
+              <div class="media d-flex">
+                <div class="align-self-center">
+                  <i class="icon-disc warning font-large-2 float-left"></i>
+                </div>
+                <div class="media-body text-right">
+                  <h3><input readonly type="number" id="wrist_circumference" style="height:2.5em; width:3em; border:none;"></h3>
+                  <span>Wrist Circumference</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-sm-6 col-12">
+        <div class="card">
+          <div class="card-content">
+            <div class="card-body">
+              <div class="media d-flex">
+                <div class="align-self-center">
+                  <i class="icon-graph success font-large-2 float-left"></i>
+                </div>
+                <div class="media-body text-right">
+                  <h3><input type="number" id="height"style="height:2.5em; width:3em; border:none;"></h3>
+                  <span>Height</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-sm-6 col-12">
+        <div class="card">
+          <div class="card-content">
+            <div class="card-body">
+              <div class="media d-flex">
+                <div class="align-self-center">
+                  <i class="icon-support danger font-large-2 float-left"></i>
+                </div>
+                <div class="media-body text-right">
+                  <h3><input type="number" id="weight"style="height:2.5em; width:3em; border:none;"></h3>
+                  <span>Weight</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="row">
+      <div class="col-xl-3 col-sm-6 col-12">
+        <div class="card">
+          <div class="card-content">
+            <div class="card-body">
+              <div class="media d-flex">
+                <div class="media-body text-left">
+                  <h3 class="danger"><input type="text" id="gender"style="height:2.5em; width:3em; border:none;"></h3>
+                  <span>Gender</span>
+                </div>
+                <div class="align-self-center">
+                  <i class="icon-symbol-male  primary font-large-2 float-right"></i>
+                  <i class="icon-symbol-female  danger font-large-2 float-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-sm-6 col-12">
+        <div class="card">
+          <div class="card-content">
+            <div class="card-body">
+              <div class="media d-flex">
+                <div class="media-body text-left">
+                  <h3 class="success"><input type="number" id="age"style="height:2.5em; width:3em; border:none;"></h3>
+                  <span>Age</span>
+                </div>
+                <div class="align-self-center">
+                  <i class="icon-user success font-large-2 float-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-xl-3 col-sm-6 col-12">
+        <div class="card">
+          <div class="card-content">
+            <div class="card-body">
+              <div class="media d-flex">
+                <div class="media-body text-left">
+                  <h3 class="warning"><input readonly type="number" id="bmi" style="height:2.5em; width:3em; border:none;"></h3>
+                  <span>BMI</span>
+                </div>
+                <div class="align-self-center">
+                  <i class="icon-speedometer warning font-large-2 float-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-sm-6 col-12">
+        <div class="card">
+          <div class="card-content">
+            <div class="card-body">
+              <div class="media d-flex">
+                <div class="media-body text-left">
+                  <h3 class="primary"><input readonly type="number" id="bmi_result" style="height:2.5em; width:3em; border:none;"></h3>
+                  <span>BMI Classification</span>
+                </div>
+                <div class="align-self-center">
+                  <i class="icon-bar-chart primary font-large-2 float-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    
+  </section>
+  
+  <section id="stats-subtitle">
+  <div class="row">
+    <div class="col-12 mt-3 mb-1">
+    <center><h4 class="text-uppercase">Tridosha Classification</h4></center>
+    <center><p>Observations</p></center>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xl-6 col-md-12">
+      <div class="card overflow-hidden">
+        <div class="card-content">
+          <div class="card-body cleartfix">
+            <div class="media align-items-stretch">
+              <div class="align-self-center">
+                <i class="icon-badge primary font-large-2 mr-2"></i>
+              </div>
+              <div class="media-body">
+                <h4>Classification Result</h4>
+                <span>Vata : <input readonly type="number" id="vata" style="height:1.5em; width:1.5em; border:none;"> </span><span>Pitta : <input readonly type="number" id="pitta" style="height:1.5em; width:1.5em; border:none;">  </span><span>Kapha :<input readonly type="number" id="kapha" style="height:1.5em; width:1.5em; border:none;">  </span>
+              </div>
+              <div class="align-self-center">
+                <h1></h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xl-6 col-md-12">
+      <div class="card">
+        <div class="card-content">
+          <div class="card-body cleartfix">
+            <div class="media align-items-stretch">
+              <div class="align-self-center">
+                <i class="icon-speech warning font-large-2 mr-2"></i>
+              </div>
+              <div class="media-body">
+                <h4>Recommendations</h4>
+                <span></span>
+              </div>
+              <div class="align-self-center"> 
+                <h1></h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xl-6 col-md-12">
+      <div class="card">
+        <div class="card-content">
+          <div class="card-body cleartfix">
+            <div class="media align-items-stretch">
+              <div class="align-self-center">
+                <h1 class="mr-2"></h1>
+              </div>
+              <div class="media-body">
+                <h4>Potential Health Risks</h4>
+                <span></span>
+              </div>
+              <div class="align-self-center">
+                <i class="icon-heart danger font-large-2"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xl-6 col-md-12">
+      <div class="card">
+        <div class="card-content">
+          <div class="card-body cleartfix">
+            <div class="media align-items-stretch">
+              <div class="align-self-center">
+                <h1 class="mr-2"></h1>
+              </div>
+              <div class="media-body">
+                <h4>Dietary Suggestions</h4>
+                <span></span>
+              </div>
+              <div class="align-self-center">
+                <i class="icon-pie-chart success font-large-2"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
